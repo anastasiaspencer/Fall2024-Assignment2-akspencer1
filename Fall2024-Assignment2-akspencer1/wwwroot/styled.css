@@ -1,0 +1,123 @@
+﻿/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
+    
+    font-family: fantasy;
+    background-image: url('https://images.unsplash.com/photo-1527684651001-731c474bbb5a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFzdGhldGljJTIwdHJhaW58ZW58MHx8MHx8fDA%3D'); /* Replace with your chosen URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 3rem;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+
+/* Input styling */
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Makes the corners rounded */
+    background-color: rgba(0, 40, 0, 0.2); /* Dark coniferous green with 10% opacity */
+    border: 1px solid #ccc; /* Optional: adds a border */
+}
+
+    /* Optional: Add a hover effect for better UX */
+    input[type="text"]:hover {
+        border-color: #888; /* Change border color on hover */
+    }
+
+    input[type="text"]:focus {
+        outline: none; /* Remove default outline */
+        border-color: #333; /* Change border color when focused */
+        background-color: rgb(255, 255, 240, .7);
+        
+    }
+     
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    
+    background-color: rgba(0, 40, 0, 0.4); /* Dark coniferous green with 10% opacity */
+    border: 1px solid #ccc; /* Optional: adds a border */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    cursor: pointer;
+    color: ivory;
+    
+}
+
+/* Div for search results */
+#searchResults {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: ivory; /* Match the button text color */
+    background-color: rgba(0, 40, 0, 0.6); /* Slightly darker for better contrast */
+    border-radius: 15px; /* Rounded corners */
+    padding: 25px 30px; /* Increased padding for a more spacious look */
+    max-width: 700px; /* Slightly wider for readability */
+    margin-left: auto; /* Center the div */
+    margin-right: auto; /* Center the div */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+    display: none;
+}
+
+/* Styling for individual result links */
+#searchResults p {
+    margin: 20px 0; /* Add spacing between results */
+    line-height: 1.6; /* Improve readability with line height */
+    color: #e0e0e0; /* Lighter text for easier reading */
+}
+
+#searchResults a {
+    color: darkgreen; /* Soft green color for links */
+    text-decoration: none; /* Remove wavy underline */
+    font-weight: bold; /* Make links stand out */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+#searchResults a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #fff; /* Change color on hover */
+}
+
+
+#button-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+#time {
+    margin-left: 10px; /* Space between the button and the time display */
+    font-size: 1rem;
+    color: ivory;
+    display: none; /* Hidden by default */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: ivory; /* Match the button text color */
+    background-color: rgba(0, 40, 0, 0.4); /* Semi-transparent background */
+    border: 1px solid #ccc; /* Optional: adds a border */
+    padding: 10px; /* Padding for spacing inside the div */
+    max-width: 600px; /* Limit width for better readability */
+}
+

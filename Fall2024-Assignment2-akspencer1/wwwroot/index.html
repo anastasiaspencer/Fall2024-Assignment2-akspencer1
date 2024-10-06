@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css" integrity="sha384-AUxBc4TYOEuk4Hp24650vW1R1zXkuFE8IK5cgdi5qyXRKuc1Xx2ndBiefujL0Qho" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" crossorigin="anonymous"></script>
+
+    <title>Little Engine</title>
+
+
+    <link rel="stylesheet" href="styled.css">
+
+</head>
+
+
+<body>
+    <div>
+
+        <header>
+            <h1 id="search-engine-name" onclick="changeBackgroundImage()">Little Engine</h1>
+        </header>
+
+
+        <input type="text" id="query" placeholder="Enter your search query here">
+
+        <div id="button-container" style="display: flex; align-items: center; justify-content: center;">
+            <button id="search-results" onclick="apiSearch()">Search</button>
+            <button id="show-time" onclick="displayTime()">Show Current Time</button>
+            <div id="time" style="margin-left: 10px; display: none;"></div> 
+            <button id="luckybutton" onclick="getLucky()">I'm Feeling Lucky</button>
+
+        </div>
+
+
+        <div id="searchResults"></div>
+
+
+        <script type="text/javascript" src="./script.js"></script>
+    </div>
+</body>
+
+
+</html>
